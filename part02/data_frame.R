@@ -121,6 +121,85 @@ books
 
 merge(authors, books, by = 'name')
 
+# 데이터프레임 연산.
+
+empty <- data.frame()
+
+c1 <- 1:10
+
+c2 <- letters[ 1:10]
+
+df <- data.frame(col.name.1 = c1, col.name.2 = c2)
+
+df2 <- data.frame(num = c1, letter = c2)
+
+
+df2
+
+d2 <- read.csv('example.csv')
+
+head(d2)
+
+nrow(d2)
+ncol(d2)
+
+rownames(d2)
+colnames(d2)
+
+cars <- mtcars
+
+is.data.frame(cars)
+
+head(cars)
+tail(cars)
+
+summary(cars)
+
+str(cars)
+
+cars$mpg
+
+
+df2
+
+new.data <- c(20, 'k')
+new.data
+
+rbind(df2, new.data)
+
+new.data <- data.frame(num = 20, letter = 'k')
+
+rbind(df2, new.data)
+
+df2$new.col <- 101:110
+
+df2$ppp <- 1001:1010
+
+df2
+
+
+df2
+
+
+colnames(df2)[4] <- 'added.col'
+
+df2
+
+colnames(df2) <- c('col.1', 'col.2', 'col.3', 'col.4')
+
+df2
+
+df2[  -6 ,   ]
+
+df2[  ,  -3 ]
+
+# 결측값  NA / NAN  체크 
+
+is.na(df2)
+
+any(is.na(df2))
+
+colSums(is.na(df2))
 
 
 
